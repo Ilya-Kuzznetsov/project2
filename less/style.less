@@ -1,32 +1,172 @@
+.container{
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+body{
+  font-family: 'PT Sans', sans-serif;
+}
+.main-nav{
+  display: flex;
+  flex-direction: column-reverse;
+  &__togle--close{
+    width: 26px;
+    height: 26px;
+    margin-left: 25px;
+    background-image: url(../img/icon-cross.png);
+    background-color: black;
+    font-size: 0;
+  }
+}
 .site-list{
-  background-color: #81b3d2;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  &__small-list{
+    height: 56px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    &--first{
+      flex-direction: row-reverse;
+    }
+    &--second{
+      flex-direction: row-reverse;
+    }
+    &__item{
+      &--first-first{
+        order: 1;
+        margin-right: 13px;
+      }
+      &--second-first{
+        order: 1;
+        & a{
+          margin-right: 20px;
+        }
+      }
+      &--second-second{
+        flex-basis: 91px;
+      }
+    }
+  }
   &__item{
+    text-align: center;
+    height: 56px;
     font-size: 18px;
     line-height: 40px;
     color: white;
     text-transform: uppercase;
+    background-color: hsla(203, 47%, 66%, 1);
+    &--first{
+      background-color: hsla(0, 0%, 100%, 1);
+      order: 2;
+    }
+    & a{
+      display: block;
+      margin-top: 7px;
+    }
+  }
+  a{
+    text-decoration: none;
+    color: white;
   }
 }
 .prewiev{
   background-image: url(../img/slider.jpg);
   background-repeat: no-repeat;
+  background-position: 50% 0%;
+  height: 299px;
+  padding-left: 19px;
+  padding-top: 89px;
+  &::after{
+    content: "";
+    display: block;
+    background-image: url(../img/intro-triangle.png);
+    background-repeat: no-repeat;
+    height: 57px;
+    width: 1201px;
+    position: relative;
+    top: 24px;
+    left: -459px;
+  }
 }
-.advantages__header{
-  font-size: 18px;
-  line-height: 26px;
-}
-.advantages__text{
-  font-size: 14px;
-  line-height: 26px;
-}
-.advantages__item__header{
-  font-size: 18px;
-  line-height: 26px;
-}
-.advantages__item__number,
-.advantages__item__text{
-  font-size: 14px;
-  line-height: 21px;
+.advantages{
+  text-align: center;
+  overflow: hidden;
+  &__list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__header{
+    font-size: 18px;
+    line-height: 26px;
+    margin: 41px auto 0 auto;
+    width: 257px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  &__text{
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    width: 252px;
+    margin: 27px auto 0 auto;
+  }
+  &__item{
+    list-style: none;
+    &__header{
+      font-size: 18px;
+      line-height: 26px;
+      margin: 0;
+      margin-top: 4px;
+      padding: 0;
+      padding-top: 41px;
+      &--first{
+        background-color: hsla(203, 47%, 66%, 1);
+        &::before{
+          content: "";
+          display: block;
+          width: 768px;
+          height: 37px;
+          background-image: url(../img/white-copy.png);
+          background-repeat: no-repeat;
+          position: relative;
+          top: -41px;
+          left: -223px;
+        }
+      }
+    }
+    &__photo{
+      margin-left: -100px;
+    }
+    &__number,
+    &__text{
+      font-size: 14px;
+      line-height: 21px;
+      margin: 0;
+      padding: 0;
+      padding-top: 8px;
+        &--first{
+          background-color: hsla(203, 47%, 66%, 1);
+        }
+    }
+    &__text{
+      padding: 15px 20px 40px 20px;
+    }
+  }
+
 }
 .small-list__header{
   font-size: 18px;
