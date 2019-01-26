@@ -2,8 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link href="css/normolize.css" rel="stylesheet">
   </head>
@@ -18,7 +19,7 @@
             </a>
             </li>
             <li class="site-list__small-list__item">
-              <button class="main-nav__togle" type="button">Открыть меню</button>
+              <button class="main-nav__togle main-nav__togle--open" type="button">Открыть меню</button>
             </li>
           </ul>
           <ul class="main-nav__list site-list">
@@ -57,7 +58,7 @@
         <p class="advantages__header">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--first">
             <h3 class="advantages__item__header advantages__item__header--first">НАСТОЯЩИЙ ГОРОДОК</h3>
             <p class="advantages__item__number advantages__item__number--first">— №1 —</p>
             <p class="advantages__item__text advantages__item__text--first">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
@@ -65,38 +66,38 @@
             <ul class="advantages__item__list small-list">
               <li class="small-list__item">
                 <h4 class="small-list__header small-list__header--first">Жилье</h4>
-                <p class="small-list__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <p class="small-list__text small-list__text--first">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li class="small-list__item">
                 <h4 class="small-list__header small-list__header--second">СУВЕНИРЫ</h4>
-                <p class="small-list__text">Не только китайского, но и местного производства!</p>
+                <p class="small-list__text small-list__text-second">Не только китайского, но и местного производства!</p>
               </li>
               <li class="small-list__item">
                 <h4 class="small-list__header small-list__header--third">ЕДА</h4>
-                <p class="small-list__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+                <p class="small-list__text small-list__text--third">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
               </li>
             </ul>
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__item__header">Там есть Мост дьявола</h3>
-            <p class="advantages__item__number">— №2 —</p>
-            <p class="advantages__item__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <li class="advantages__item advantages__item--second">
+            <h3 class="advantages__item__header advantages__item__header--second">Там есть Мост дьявола</h3>
+            <p class="advantages__item__number advantages__item__number--second">— №2 —</p>
+            <p class="advantages__item__text advantages__item__text--second">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             <img class="advantages__item__photo photo-2" src="img/bridge.jpg" alt="Фото моста дьявола">
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__item__header">Небольшая площадь</h3>
-            <p class="advantages__item__number">— №3 —</p>
-            <p class="advantages__item__text">ВСЕ интересные места находятся очень близко</p>
+          <li class="advantages__item advantages__item--third">
+            <h3 class="advantages__item__header advantages__item__header--third">Небольшая площадь</h3>
+            <p class="advantages__item__number advantages__item__number--third">— №3 —</p>
+            <p class="advantages__item__text advantages__item__text--third">ВСЕ интересные места находятся очень близко</p>
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__item__header">Красивая дорога</h3>
-            <p class="advantages__item__number">— №4 —</p>
-            <p class="advantages__item__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+          <li class="advantages__item advantages__item--fourth">
+            <h3 class="advantages__item__header advantages__item__header--fourth">Красивая дорога</h3>
+            <p class="advantages__item__number advantages__item__number--fourth">— №4 —</p>
+            <p class="advantages__item__text advantages__item__text--fourth">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__item__header">Мало туристов</h3>
-            <p class="advantages__item__number">— №5 —</p>
-            <p class="advantages__item__text">Большинство едет в гранд каньон и толпится там</p>
+          <li class="advantages__item advantages__item-fifth">
+            <h3 class="advantages__item__header advantages__item__header--fifth">Мало туристов</h3>
+            <p class="advantages__item__number advantages__item__number--fifth">— №5 —</p>
+            <p class="advantages__item__text advantages__item__text--fifth">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
       </section>
@@ -108,7 +109,7 @@
       </section>
 
       <section class="map">
-        <!-- Тут будет скрипт карты гугл -->
+        <img src="img/map.png" alt="карта проезда">
       </section>
     </main>
 

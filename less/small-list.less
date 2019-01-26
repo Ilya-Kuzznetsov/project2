@@ -1,0 +1,73 @@
+.small-list{
+  list-style: none;
+  margin: 0;
+  margin-top: -5px;
+  padding: 0;
+  &__header{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 26px;
+    &--first{
+      margin-bottom: 13px;
+      &::before{
+        display: block;
+        content: "";
+        background-image: url(../img/icon-house.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 37px;
+        height: 37px;
+        position: relative;
+        top: 28px;
+        left: -47px;
+      }
+    }
+    &--second{
+      margin-top: -8px;
+      margin-bottom: 13px;
+      &::before{
+        display: block;
+        content: "";
+        background-image: url(../img/icon-gift.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 37px;
+        height: 37px;
+        position: relative;
+        top: 26px;
+        left: -43px;
+      }
+    }
+    &--third{
+      margin-top: -8px;
+      margin-bottom: 13px;
+      &::before{
+        display: block;
+        content: "";
+        background-image: url(../img/icon-burger.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 37px;
+        height: 37px;
+        position: relative;
+        top: 33px;
+        left: -49px;
+      }
+    }
+  }
+  &__text{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 21px;
+    &--third{
+      width: 200px;
+    }
+  }
+  &__item{
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 69px;
+  }
+}

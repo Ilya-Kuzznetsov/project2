@@ -1,0 +1,160 @@
+.advantages{
+  text-align: center;
+  overflow: hidden;
+  &__list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__header{
+    font-size: 18px;
+    line-height: 26px;
+    margin: 41px auto 0 auto;
+    width: 257px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  &__text{
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    width: 252px;
+    margin: 27px auto 0 auto;
+  }
+  &__item{
+    list-style: none;
+    overflow: hidden;
+    &__header{
+      font-size: 18px;
+      line-height: 26px;
+      margin: 0;
+      padding: 0;
+      padding-top: 41px;
+      text-transform: uppercase;
+      &--first{
+        background-color: hsla(203, 47%, 66%, 1);
+        color: white;
+        margin-top: 4px;
+        &::before{
+          content: "";
+          display: block;
+          width: 768px;
+          height: 37px;
+          background-image: url(../img/white-copy.png);
+          background-repeat: no-repeat;
+          position: relative;
+          top: -41px;
+          left: -223px;
+        }
+      }
+      &--second{
+        background-color: hsla(203, 47%, 66%, 1);
+        color: white;
+        margin-top: 37px;
+      }
+      &--third{
+        margin-top: -13px;
+        background-color: hsla(0, 0%, 93%, 1);
+      }
+      &--fourth{
+        background-color: hsla(0, 0%, 93%, 1);
+        padding-top: 17px;
+        letter-spacing: 0.2px;
+      }
+      &--fourth{
+        background-color: #eeeeee;
+      }
+      &--fifth{
+        background-color: hsla(0, 0%, 93%, 1);
+        padding-top: 25px;
+        letter-spacing: 0.2px;
+      }
+    }
+    &__photo{
+      margin-left: -100px;
+    }
+    &__number,
+    &__text{
+      font-size: 14px;
+      line-height: 21px;
+      margin: 0;
+      padding: 0;
+      text-transform: uppercase;
+      &--first{
+        background-color: hsla(203, 47%, 66%, 1);
+        color: white;
+      }
+      &--second{
+        background-color: hsla(203, 47%, 66%, 1);
+        color: white;
+      }
+      &--third{
+        background-color: hsla(0, 0%, 93%, 1);
+      }
+      &--fourth{
+        background-color: hsla(0, 0%, 93%, 1);
+      }
+      &--fifth{
+        background-color: hsla(0, 0%, 93%, 1);
+      }
+    }
+    &__number{
+      &--first{
+        padding-top: 10px;
+      }
+      &--second{
+        padding-top: 7px;
+      }
+      &--third{
+        padding-top: 8px;
+      }
+      &--fourth{
+        padding-top: 8px;
+      }
+      &--fifth{
+        padding-top: 8px;
+      }
+    }
+    &__text{
+      &--first{
+        padding: 15px 20px 38px 20px;
+      }
+      &--second{
+        padding-top: 15px;
+        padding-bottom: 39px;
+      }
+      &--third{
+        padding: 15px 20px 38px 19px;
+        &::after{
+          content: "";
+          display: block;
+          width: 280px;
+          height: 1px;
+          background-color: #d6d6d6;
+          position: relative;
+          top: 27px;
+        }
+      }
+      &--fourth{
+        padding: 15px 30px 30px 30px;
+        &::after{
+          content: "";
+          display: block;
+          width: 280px;
+          height: 1px;
+          background-color: #d6d6d6;
+          position: relative;
+          top: 27px;
+          left: -10px;
+        }
+      }
+      &--fifth{
+        padding: 15px 34px 27px 31px;
+      }
+    }
+    &--third{
+      margin-top: -4px;
+    }
+  }
+
+}

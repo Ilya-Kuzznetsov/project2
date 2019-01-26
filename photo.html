@@ -2,21 +2,36 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Седона</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link href="css/normolize.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="container">
 
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="#" alt="Логотип Седоны">
-      </a>
       <nav class="main-nav">
-        <button class="main-nav__togle" type="button">Открыть меню</button>
-        <button class="main-nav__togle" type="button">Закрыть меню</button>
-        <div class="main-nav__wrapper">
+        <ul class="site-list__small-list site-list__small-list--first">
+          <li class="site-list__small-list__item--first-first">
+            <a class="page-header__logo">
+              <img class="page-header__logo-image" src="img/logotyle-mobile.png" alt="Логотип Седоны">
+            </a>
+            </li>
+            <li class="site-list__small-list__item">
+              <button class="main-nav__togle main-nav__togle--open" type="button">Открыть меню</button>
+            </li>
+          </ul>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">Главная</a>
+              <ul class="site-list__small-list site-list__small-list--second">
+                <li class="site-list__small-list__item--second-first">
+                  <a href="index.html">Главная</a>
+                </li>
+                <li class="site-list__small-list__item--second-second">
+                  <button class="main-nav__togle main-nav__togle--close" type="button">Закрыть меню</button>
+                </li>
+              </ul>
             </li>
             <li class="site-list__item">
               <a>фото и видео</a>
@@ -28,14 +43,16 @@
               <a href="#">HTML academy</a>
             </li>
           </ul>
-        </div>
       </nav>
     </header>
+
     <main class="page-main">
       <section class="photo__header">
-        <img class="photo__header__image" src="#" alt="Фото Седоны">
+        <img class="photo__header__image" src="img/SEDONA.png" alt="Фото Седоны">
+        <div class="photo__header__text-wrapper">
         <h2 class="photo__header__header">Фото и видео</h2>
         <p class="photo__header__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
       </section>
       <section class="photo-block">
         <ul class="photo-block__list">
@@ -85,14 +102,13 @@
     </main>
 
     <footer class="page-footer">
-
-        <p class="page-footer__hash">#visitSEDONA</p>
-        <ul class="page-footer__social-list social-list">
-          <li class="social-list__item"><a href="#">Твиттер</a></li>
-          <li class="social-list__item"><a href="#">Фейсбук</a></li>
-          <li class="social-list__item"><a href="#">Ютуб</a></li>
-        </ul>
-      </footer>
+      <p class="page-footer__hash">#visitSEDONA</p>
+      <ul class="page-footer__social-list social-list">
+        <li class="social-list__item social-list__item--first"><a href="#">Твиттер</a></li>
+        <li class="social-list__item social-list__item--second"><a href="#">Фейсбук</a></li>
+        <li class="social-list__item social-list__item--third"><a href="#">Ютуб</a></li>
+      </ul>
+    </footer>
 
   </body>
 </html>
