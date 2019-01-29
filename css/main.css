@@ -12,6 +12,16 @@
 body {
   font-family: 'PT Sans', sans-serif;
 }
+.flex-container {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+fieldset {
+  margin: 0;
+  padding: 0;
+}
 .main-nav {
   display: flex;
   flex-direction: column-reverse;
@@ -408,7 +418,7 @@ body {
 .photo__header {
   background-image: url(../img/slider.jpg);
   background-repeat: no-repeat;
-  background-position: 0;
+  background-position: -225px -231px;
 }
 .photo__header__image {
   position: relative;
@@ -526,4 +536,164 @@ body {
 .video-block__video {
   width: 100%;
   height: 201px;
+}
+.page-main__header {
+  background-image: url(../img/slider.jpg);
+  background-repeat: no-repeat;
+  background-position: -224px -232px;
+}
+.page-main__header__image {
+  margin-top: 51px;
+  margin-left: 45px;
+}
+.page-main__header__header {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-top: 46px;
+}
+.page-main__header__text {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-top: 26px;
+  text-align: center;
+}
+.page-main__header__text-wrapper {
+  text-align: center;
+}
+.page-main__header__text-wrapper::before {
+  content: "";
+  display: block;
+  height: 56px;
+  background-image: url(../img/intro-triangle.png);
+  background-position: -440px;
+  position: relative;
+  top: 7px;
+}
+.page-main__header::after {
+  content: "";
+  display: block;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  position: relative;
+  top: 2px;
+}
+.main-form__fieldset {
+  border-width: 0;
+}
+.main-form__fieldset-list {
+  list-style: none;
+  margin: 0;
+  padding: 20px 20px 3px 20px;
+}
+.main-form__fieldset-list__item {
+  align-items: center;
+  margin-bottom: 18px;
+}
+.main-form__fieldset::after {
+  content: "";
+  display: block;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+  position: relative;
+  top: 2px;
+}
+.main-form__fieldset-item-positive::after,
+.main-form__fieldset-item-negative::after,
+.main-form__fieldset-item-unknown::after {
+  content: "";
+  display: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: black;
+  position: relative;
+  left: -245px;
+  top: 18px;
+}
+.main-form__legend {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 21px;
+}
+.main-form__input-field {
+  height: 58px;
+  background-color: #f2f2f2;
+  border-width: 0;
+  flex-grow: 1;
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.main-form__input-field--tel {
+  background-image: url(../img/tel.jpg);
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+.main-form__input-field--email {
+  background-image: url(../img/mail.jpg);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  margin-bottom: 21px;
+}
+.main-form__label--tel {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 6px;
+  padding-left: 22px;
+}
+.main-form__label--email {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  margin-top: 11px;
+  margin-bottom: 6px;
+  padding-left: 20px;
+}
+.main-form__label--positive,
+.main-form__label--negative,
+.main-form__label--unknown {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  width: 262px;
+}
+.main-form__label--positive::before,
+.main-form__label--negative::before,
+.main-form__label--unknown::before {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  margin-right: 22px;
+}
+.main-form__label--unknown {
+  margin-bottom: 20px;
+}
+.main-form ::placeholder {
+  color: black;
+}
+.main-form__radio {
+  display: none;
+}
+.main-form__fieldset--introduce .main-form__label {
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+#positive:checked ~ .main-form__fieldset-item-positive::after,
+#negative:checked ~ .main-form__fieldset-item-negative::after,
+#unknown:checked ~ .main-form__fieldset-item-unknown::after {
+  display: block;
 }

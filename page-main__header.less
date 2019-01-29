@@ -1,0 +1,44 @@
+.page-main__header{
+  background-image: url(../img/slider.jpg);
+  background-repeat: no-repeat;
+  background-position: -224px -232px;
+  &__image{
+    margin-top: 51px;
+    margin-left: 45px;
+  }
+  &__header{
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-top: 46px;
+  }
+  &__text{
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-top: 26px;
+    text-align: center;
+  }
+  &__text-wrapper{
+    text-align: center;
+    &::before{
+      content: "";
+      content: "";
+      display: block;
+      height: 56px;
+      background-image: url(../img/intro-triangle.png);
+      background-position: -440px;
+      position: relative;
+      top: 7px;
+    }
+  }
+  &::after{
+    content: "";
+    display: block;
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    position: relative;
+    top: 2px;
+  }
+}
