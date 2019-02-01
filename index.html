@@ -17,11 +17,11 @@
             <a class="page-header__logo">
               <img class="page-header__logo-image" src="img/logotyle-mobile.png" alt="Логотип Седоны">
             </a>
-            </li>
-            <li class="site-list__small-list__item">
-              <button class="main-nav__togle main-nav__togle--open" type="button">Открыть меню</button>
-            </li>
-          </ul>
+          </li>
+          <li class="site-list__small-list__item">
+            <button class="main-nav__togle main-nav__togle--open" type="button">Открыть меню</button>
+          </li>
+        </ul>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <ul class="site-list__small-list site-list__small-list--second">
@@ -44,6 +44,26 @@
             </li>
           </ul>
       </nav>
+
+      <nav class="tablet-nav">
+        <ul class="tablet-nav__list">
+          <li class="tablet-nav__list__item tablet-nav__list__item--first">
+            <a>Главная</a>
+          </li>
+          <li class="tablet-nav__list__item tablet-nav__list__item--second">
+            <a href="photo.html">фото и видео</a>
+          </li>
+          <li class="tablet-nav__list__item tablet-nav__list__item--image">
+            <img class="page-header__logo-image" src="img/logotype-tablet.png" alt="Логотип Седоны">
+          </li>
+          <li class="tablet-nav__list__item tablet-nav__list__item--third">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="tablet-nav__list__item tablet-nav__list__item--fourth">
+            <a href="#">HTML academy</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="page-main">
@@ -51,7 +71,8 @@
       <h1 class="visually-hidden">Седона - небольшой город в  Аризоне, заслуживающий большего!</h1>
 
       <section class="prewiev">
-        <img class="prewiev__text" src="img/text-index.png" alt="Седона promo text">
+        <img class="prewiev__text prewiev__text--mobile" src="img/text-index.png" alt="Седона promo text">
+        <img class="prewiev__text prewiev__text--tablet-desktop" src="img/text-index-tablet.png" alt="Седона promo text">
       </section>
 
       <section class="advantages">
@@ -59,57 +80,68 @@
         <p class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--first">
-            <h3 class="advantages__item__header advantages__item__header--first">НАСТОЯЩИЙ ГОРОДОК</h3>
-            <p class="advantages__item__number advantages__item__number--first">— №1 —</p>
-            <p class="advantages__item__text advantages__item__text--first">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            <div class="advantages__item__wrapper advantages__item__wrapper--first">
+              <h3 class="advantages__item__header advantages__item__header--first">НАСТОЯЩИЙ ГОРОДОК</h3>
+              <p class="advantages__item__number advantages__item__number--first">— №1 —</p>
+              <p class="advantages__item__text advantages__item__text--first">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            </div>
             <img class="advantages__item__photo photo-1" src="img/motel.jpg" alt="Фото мотеля в Седоне">
+            <img class="advantages__item__photo photo-1--tablet" src="img/motel-tablet.jpg" alt="Фото мотеля в Седоне">
             <ul class="advantages__item__list small-list">
-              <li class="small-list__item">
+              <li class="small-list__item small-list__item--first">
                 <h4 class="small-list__header small-list__header--first">Жилье</h4>
                 <p class="small-list__text small-list__text--first">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="small-list__item">
+              <li class="small-list__item small-list__item--second">
                 <h4 class="small-list__header small-list__header--second">СУВЕНИРЫ</h4>
                 <p class="small-list__text small-list__text-second">Не только китайского, но и местного производства!</p>
               </li>
-              <li class="small-list__item">
+              <li class="small-list__item small-list__item--third">
                 <h4 class="small-list__header small-list__header--third">ЕДА</h4>
                 <p class="small-list__text small-list__text--third">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
               </li>
             </ul>
           </li>
           <li class="advantages__item advantages__item--second">
-            <h3 class="advantages__item__header advantages__item__header--second">Там есть Мост дьявола</h3>
-            <p class="advantages__item__number advantages__item__number--second">— №2 —</p>
-            <p class="advantages__item__text advantages__item__text--second">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <div class="advantages__item__wrapper advantages__item__wrapper--second">
+              <h3 class="advantages__item__header advantages__item__header--second">Там есть Мост дьявола</h3>
+              <h3 class="advantages__item__header advantages__item__header--second advantages__item__header--second--tablet">Там есть<br>Мост дьявола</h3>
+              <p class="advantages__item__number advantages__item__number--second">— №2 —</p>
+              <p class="advantages__item__text advantages__item__text--second">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
             <img class="advantages__item__photo photo-2" src="img/bridge.jpg" alt="Фото моста дьявола">
+            <img class="advantages__item__photo photo-2--tablet" src="img/bridge.jpg" alt="Фото моста дьявола">
           </li>
-          <li class="advantages__item advantages__item--third">
-            <h3 class="advantages__item__header advantages__item__header--third">Небольшая площадь</h3>
-            <p class="advantages__item__number advantages__item__number--third">— №3 —</p>
-            <p class="advantages__item__text advantages__item__text--third">ВСЕ интересные места находятся очень близко</p>
-          </li>
-          <li class="advantages__item advantages__item--fourth">
-            <h3 class="advantages__item__header advantages__item__header--fourth">Красивая дорога</h3>
-            <p class="advantages__item__number advantages__item__number--fourth">— №4 —</p>
-            <p class="advantages__item__text advantages__item__text--fourth">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
-          </li>
-          <li class="advantages__item advantages__item-fifth">
-            <h3 class="advantages__item__header advantages__item__header--fifth">Мало туристов</h3>
-            <p class="advantages__item__number advantages__item__number--fifth">— №5 —</p>
-            <p class="advantages__item__text advantages__item__text--fifth">Большинство едет в гранд каньон и толпится там</p>
-          </li>
+          <div class="advantages__item__wrapper--third">
+            <li class="advantages__item advantages__item--third">
+              <h3 class="advantages__item__header advantages__item__header--third">Небольшая площадь</h3>
+              <p class="advantages__item__number advantages__item__number--third">— №3 —</p>
+              <p class="advantages__item__text advantages__item__text--third">ВСЕ интересные места находятся очень близко</p>
+            </li>
+            <li class="advantages__item advantages__item--fourth">
+              <h3 class="advantages__item__header advantages__item__header--fourth">Красивая дорога</h3>
+              <p class="advantages__item__number advantages__item__number--fourth">— №4 —</p>
+              <p class="advantages__item__text advantages__item__text--fourth">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+            </li>
+            <li class="advantages__item advantages__item--fifth">
+              <h3 class="advantages__item__header advantages__item__header--fifth">Мало туристов</h3>
+              <p class="advantages__item__number advantages__item__number--fifth">— №5 —</p>
+              <p class="advantages__item__text advantages__item__text--fifth">Большинство едет в гранд каньон и толпится там</p>
+            </li>
+          </div>
         </ul>
       </section>
 
       <section class="interesting">
         <h2 class="interesting__header">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
         <p class="interesting__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a class="interesting__link button-sample button-sample--blue" href="#">Найти гостиницу</a>
+        <p class="interesting__text interesting__text--tablet">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <a class="interesting__link button-sample button-sample--index" href="#">Найти гостиницу</a>
       </section>
 
-      <section class="map">
-        <img src="img/map.png" alt="карта проезда">
+      <section class="map-block">
+        <img class="map" src="img/map.jpg" alt="карта проезда">
+        <img class="map--tablet" src="img/map-tablet.jpg" alt="карта проезда">
       </section>
     </main>
 

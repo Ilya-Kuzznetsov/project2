@@ -25,13 +25,26 @@ fieldset{
 .page-main{
   overflow: hidden;
 }
+.tablet-nav{
+  display: none;
+  height: 56px;
+}
+@media (min-width: 768px){
+  .container{
+    width: 768px;
+    margin: 0 auto;
+  }
+  .tablet-nav{
+    display: block;
+  }
+}
 @import "main-nav.less";
 @import "site-list.less";
 @import "prewiev.less";
 @import "advantages.less";
 @import "small-list.less";
 @import "interesting.less";
-@import "button-sample--blue.less";
+@import "button-sample.less";
 @import "page-footer.less";
 @import "social-list__item.less";
 @import "photo__header.less";
@@ -39,3 +52,5 @@ fieldset{
 @import "video-block.less";
 @import "page-main__header.less";
 @import "form-block.less";
+@import "tablet-nav__list.less";
+@import "map-block.less";

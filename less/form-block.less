@@ -1,6 +1,12 @@
 .main-form{
+  margin-bottom: 40px;
   &__fieldset{
     border-width: 0;
+    &:nth-child(5){
+      &::after{
+        display: none
+      }
+    }
     &-list{
       list-style: none;
       margin: 0;
@@ -35,6 +41,22 @@
           top: 18px;
         }
       }
+      &--devils-bridge,
+      &--mountain,
+      &--park,
+      &--red-mountains{
+        &::after{
+          content: "";
+          display: none;
+          width: 24px;
+          height: 16px;
+          position: relative;
+          top: 20px;
+          right: 182px;
+          background-image: url(../img/tick.png);
+          background-repeat: no-repeat;
+        }
+      }
     }
   }
   &__legend{
@@ -53,6 +75,11 @@
     padding-left: 20px;
     font-weight: bold;
     font-size: 18px;
+    &--name,
+    &--lastname,
+    &--father{
+      width: 100px;
+    }
     &--tel{
       background-image: url(../img/tel.jpg);
       background-repeat: no-repeat;
@@ -104,12 +131,53 @@
     &--unknown{
       margin-bottom: 20px;
     }
+    &--devils-bridge,
+    &--mountain,
+    &--park,
+    &--red-mountains{
+      display: flex;
+      align-items: center;
+      margin-bottom: 22px;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: bold;
+      width: 200px;
+      &::before{
+        content: "";
+        display: block;
+        width: 56px;
+        height: 56px;
+        margin-right: 22px;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+      }
+    }
   }
   ::placeholder{
     color: black;
   }
   &__radio{
     display: none;
+  }
+  &__chexkbox{
+    display: none;
+  }
+  &__textarea{
+    max-width: 256px;
+    max-height: 141px;
+    padding-top: 17px;
+    padding-left: 21px;
+    border: 0px;
+    margin: 0px;
+    width: 285px;
+    height: 170px;
+    resize: none;
+    background-color: #f2f2f2;
+    margin-top: 16px;
+    margin-left: 19px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
   }
 }
 .main-form__fieldset--introduce{
@@ -121,5 +189,11 @@
 #positive:checked ~ .main-form__fieldset-item-positive::after,
 #negative:checked ~ .main-form__fieldset-item-negative::after,
 #unknown:checked ~ .main-form__fieldset-item-unknown::after{
+  display: block;
+}
+#devils-bridge:checked ~ .main-form__fieldset-item--devils-bridge::after,
+#mountain:checked ~ .main-form__fieldset-item--mountain::after,
+#park:checked ~ .main-form__fieldset-item--park::after,
+#red-mountains:checked ~ .main-form__fieldset-item--red-mountains::after{
   display: block;
 }

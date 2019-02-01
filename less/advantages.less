@@ -20,6 +20,7 @@
     text-transform: uppercase;
     width: 252px;
     margin: 27px auto 0 auto;
+    color: #333333;
   }
   &__item{
     list-style: none;
@@ -51,6 +52,9 @@
         background-color: hsla(203, 47%, 66%, 1);
         color: white;
         margin-top: 37px;
+        &--tablet{
+          display: none;
+        }
       }
       &--third{
         margin-top: -13px;
@@ -80,6 +84,7 @@
       margin: 0;
       padding: 0;
       text-transform: uppercase;
+      color: #333333;
       &--first{
         background-color: hsla(203, 47%, 66%, 1);
         color: white;
@@ -156,5 +161,132 @@
       margin-top: -4px;
     }
   }
-
+}
+.photo{
+  &-1{
+    &--tablet{
+      display: none;
+    }
+  }
+  &-2{
+    &--tablet{
+      display: none;
+      margin: 0;
+      margin-top: 37px;
+      float: left;
+      width: 512px;
+    }
+  }
+}
+@media (min-width: 768px){
+  .advantages{
+    &__header{
+      font-size: 21px;
+      line-height: 26px;
+      width: 445px;
+      margin-top: 51px;
+    }
+    &__text{
+      width: 500px;
+      margin-bottom: 50px;
+    }
+    &__item{
+      &--first{
+        margin-top: 46px;
+      }
+      &--third,
+      &--fourth,
+      &--fifth{
+        margin: 0;
+        flex-basis: 256px;
+        height: 256px;
+      }
+      &__wrapper{
+        width: 256px;
+        &--first{
+          float: left;
+        }
+        &--second{
+          float: right;
+        }
+        &--third{
+          display: flex;
+        }
+      }
+      &__header{
+        font-size: 21px;
+        line-height: 26px;
+        &--first{
+          padding: 47px 42px 8px 41px;
+          margin-top: 0;
+          &::before{
+            display: none;
+          }
+        }
+        &--second{
+          display: none;
+          &--tablet{
+            display: block;
+            padding-top: 46px;
+          }
+        }
+        &--third{
+          padding: 59px 50px 1px 50px;
+        }
+        &--fourth{
+          padding: 46px 75px 1px 75px;
+        }
+        &--fifth{
+          padding: 46px 78px 1px 78px;
+        }
+      }
+      &__number{
+        &--first{
+          padding-top: 0;
+        }
+        &--second{
+          padding-bottom: 8px;
+        }
+      }
+      &__text{
+        &--first{
+          width: 170px;
+          padding: 22px 43px 43px 43px;
+        }
+        &--second{
+          padding: 15px 50px 44px 50px;
+        }
+        &--third{
+          padding: 21px 49px 44px 49px;
+        }
+        &--fourth{
+          padding: 21px 59px 44px 59px;
+        }
+        &--fifth{
+          padding: 22px 52px 43px 52px;
+        }
+        &--third,
+        &--fourth,
+        &--fifth{
+          &::after{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .photo{
+    &-1{
+      display: none;
+      &--tablet{
+        display: block;
+      }
+    }
+    &-2{
+      display: none;
+      &--tablet{
+        display: block;
+      }
+    }
+  }
 }

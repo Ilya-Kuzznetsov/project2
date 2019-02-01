@@ -83,11 +83,11 @@
             <ul class="flex-container flex-column main-form__fieldset-list">
               <li class="flex-container flex-column">
                 <label class="main-form__label main-form__label--tel" for="tel">Контактный телефон<sup>*</sup>:</label>
-                <input class="main-form__input-field main-form__input-field--tel" type="tel" name="tel" id="tel" placeholder="Введите телефон">
+                <input class="main-form__input-field main-form__input-field--tel" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
               </li>
               <li class="flex-container flex-column">
                 <label class="main-form__label main-form__label--email" for="email">Электронная почта<sup>*</sup>:</label>
-                <input class="main-form__input-field main-form__input-field--email" type="email" name="email" id="email" placeholder="Введите e-mail">
+                <input class="main-form__input-field main-form__input-field--email" type="email" name="email" id="email" placeholder="Введите e-mail" required>
               </li>
             </ul>
           </fieldset>
@@ -112,15 +112,28 @@
 
           <fieldset class="main-form__fieldset main-form__fieldset--visited-places">
             <legend class="main-form__legend main-form__legend--visited-places">Посещенные достопримечательности:</legend>
+            <ul class="flex-container flex-column main-form__fieldset-list">
 
-            <input class="main-form__chexkbox main-form__chexkbox--devils-bridge" type="checkbox" name="devils-bridge" id="devils-bridge">
-            <label class="main-form__label main-form__label--devils-bridge" for="devils-bridge">Мост Дьявола</label>
+              <input class="main-form__chexkbox main-form__chexkbox--devils-bridge" type="checkbox" name="devils-bridge" id="devils-bridge" checked>
+              <li class="flex-container main-form__fieldset-item--devils-bridge">
+                <label class="main-form__label main-form__label--devils-bridge" for="devils-bridge">Мост Дьявола</label>
+              </li>
 
-            <input class="main-form__chexkbox main-form__chexkbox--mountain" type="checkbox" name="mountain" id="mountain">
-            <label class="main-form__label main-form__label--mountain" for="mountain">Гора-Колокол</label>
+              <input class="main-form__chexkbox main-form__chexkbox--mountain" type="checkbox" name="mountain" id="mountain" checked>
+              <li class="flex-container main-form__fieldset-item--mountain">
+                <label class="main-form__label main-form__label--mountain" for="mountain">Гора-Колокол</label>
+              </li>
 
-            <input class="main-form__chexkbox main-form__chexkbox--park" type="checkbox" name="park" id="park">
-            <label class="main-form__label main-form__label--park" for="park">Слайд-парк</label>
+              <input class="main-form__chexkbox main-form__chexkbox--park" type="checkbox" name="park" id="park" checked>
+              <li class="flex-container main-form__fieldset-item--park">
+                <label class="main-form__label main-form__label--park" for="park">Слайд-парк</label>
+              </li>
+
+              <input class="main-form__chexkbox main-form__chexkbox--red-mountains" type="checkbox" name="red-mountains" id="red-mountains">
+              <li class="flex-container main-form__fieldset-item--red-mountains">
+                <label class="main-form__label main-form__label--red-mountains" for="red-mountains">Красные скалы</label>
+              </li>
+            </ul>
           </fieldset>
 
           <fieldset class="main-form__fieldset main-form__fieldset--describe">
@@ -128,7 +141,7 @@
 
             <textarea class="main-form__textarea" placeholder="Опишите подробно все свои восторги" name="describe your emotions"></textarea>
           </fieldset>
-          <button type="submit">Отправить отзыв</button>
+          <button type="submit" class="button-sample button-sample--form">Отправить отзыв</button>
         </form>
       </section>
     </main>

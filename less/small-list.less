@@ -61,6 +61,7 @@
     padding: 0;
     font-size: 14px;
     line-height: 21px;
+    color: #333333;
     &--third{
       width: 200px;
     }
@@ -69,5 +70,82 @@
     text-align: left;
     text-transform: uppercase;
     padding-left: 69px;
+  }
+}
+@media (min-width: 768px){
+  .small-list{
+    display: flex;
+    margin-top: 0;
+    &__header{
+      margin-top: 88px;
+      font-size: 21px;
+      line-height: 26px;
+      &--first{
+        &::before{
+          display: block;
+          content: "";
+          background-image: url(../img/icon-house-tablet.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 75px;
+          height: 72px;
+          position: relative;
+          top: -28px;
+          left: 90px;
+        }
+      }
+      &--second{
+        margin-top: 85px;
+        &::before{
+          display: block;
+          content: "";
+          background-image: url(../img/icon-gift-tablet.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 64px;
+          height: 75px;
+          position: relative;
+          top: -28px;
+          left: 95px;
+        }
+      }
+      &--third{
+        padding-top: 4px;
+        &::before{
+          display: block;
+          content: "";
+          background-image: url(../img/icon-burger-tablet.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 77px;
+          height: 68px;
+          position: relative;
+          top: -29px;
+          left: 89px;
+        }
+      }
+    }
+    &__text{
+      width: 165px;
+      margin: 0 auto;
+      color: #333333;
+      margin-top: 20px;
+      &--third{
+        width: 151px;
+      }
+    }
+    &__item{
+      padding: 0;
+      flex-basis: 256px;
+      text-align: center;
+      height: 330px;
+      margin-bottom: -37px;
+      &--second{
+        order: 3;
+      }
+      &--third{
+        order: 2;
+      }
+    }
   }
 }

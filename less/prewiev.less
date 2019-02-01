@@ -17,4 +17,33 @@
     top: 25px;
     left: -459px;
   }
+  &__text{
+    &--mobile{
+      display: block;
+    }
+    &--tablet-desktop{
+      display: none;
+    }
+  }
+}
+@media (min-width: 768px){
+  .prewiev{
+    background-image: url(../img/slider-tablet.jpg);
+    background-position: 50% 0%;
+    height: 441px;
+    padding-left: 154px;
+    padding-top: 77px;
+    &__text{
+      &--mobile{
+        display: none;
+      }
+      &--tablet-desktop{
+        display: block;
+      }
+    }
+    &::after{
+      top: 34px;
+      left: -370px;
+    }
+  }
 }

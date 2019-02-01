@@ -16,5 +16,31 @@
     width: 262px;
     text-transform: uppercase;
     text-align: center;
+    color: #333333;
+    &--tablet{
+      display: none;
+    }
+  }
+}
+@media (min-width: 768px){
+  .interesting{
+    margin-bottom: 73px;
+    &__header{
+      font-size: 30px;
+      line-height: 26px;
+      margin: 0;
+      margin-top: 57px;
+      padding: 0;
+      text-align: center;
+    }
+    &__text{
+      display: none;
+      &--tablet{
+        display: block;
+        width: 435px;
+        padding-top: 11px;
+        margin-bottom: 58px;
+      }
+    }
   }
 }
