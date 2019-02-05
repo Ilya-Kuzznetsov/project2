@@ -5,6 +5,9 @@
   &__image{
     margin-top: 51px;
     margin-left: 45px;
+    &--tablet{
+      display: none;
+    }
   }
   &__header{
     font-size: 18px;
@@ -18,6 +21,7 @@
     text-transform: uppercase;
     margin-top: 26px;
     text-align: center;
+    color: #333333;
   }
   &__text-wrapper{
     text-align: center;
@@ -40,5 +44,38 @@
     background-color: #e5e5e5;
     position: relative;
     top: 2px;
+  }
+}
+@media (min-width: 768px){
+  .page-main__header{
+    background-image: url(../img/slider-tablet.jpg);
+    background-position: -216px -228px;
+    &__header{
+      font-size: 30px;
+      line-height: 26px;
+    }
+    &__text{
+      width: 445px;
+      margin: 32px auto 0 auto;
+    }
+    &::after{
+      display: none;
+    }
+    &__text-wrapper{
+      margin-top: 90px;
+      &::before{
+        background-position: -216px;
+        position: relative;
+        top: -29px;
+      }
+    }
+    &__image{
+      display: none;
+      &--tablet{
+        display: block;
+        margin: 0;
+        padding: 95px 144px 0px 155px;
+      }
+    }
   }
 }

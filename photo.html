@@ -44,11 +44,33 @@
           </li>
         </ul>
       </nav>
+
+      <nav class="tablet-nav">
+        <ul class="tablet-nav__list">
+          <li class="tablet-nav__list__item tablet-nav__list__item--first">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="tablet-nav__list__item tablet-nav__list__item--second">
+            <a>фото и видео</a>
+          </li>
+          <li class="tablet-nav__list__item tablet-nav__list__item--image">
+            <img class="page-header__logo-image" src="img/logotype-tablet.png" alt="Логотип Седоны">
+            <img class="page-header__logo-image page-header__logo-image--desktop" src="img/logotype-desktop.png" alt="Логотип Седоны">
+          </li>
+          <li class="tablet-nav__list__item tablet-nav__list__item--third">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="tablet-nav__list__item tablet-nav__list__item--fourth">
+            <a href="#">HTML academy</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="page-main">
       <section class="photo__header">
         <img class="photo__header__image" src="img/SEDONA.png" alt="Фото Седоны">
+        <img class="photo__header__image photo__header__image--tablet" src="img/SEDONA-tablet.png" alt="Фото Седоны">
         <div class="photo__header__text-wrapper">
           <h2 class="photo__header__header">Фото и видео</h2>
           <p class="photo__header__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
@@ -56,42 +78,60 @@
       </section>
       <section class="photo-block">
         <ul class="photo-block__list">
-          <li class="photo-block__item photo-block__item--1">
-            <img class="photo-block__image" src="img/photo-1-mobile.jpg">
-            <p class="photo-block__image-name"><b>Неродные просторы</b></p>
-            <p class="photo-block__author">Автор фото: Борис</p>
-            <div class="photo-block__like-count">
-              <img class="photo-block__like-image" src="img/like-icon.png" alt="лайк">
-              <p class="photo-block__like-number">1350</p>
+          <div class="photo-flex">
+            <div class="photo-flex__item photo-flex__item--first">
+              <li class="photo-block__item photo-block__item--1">
+                <img class="photo-block__image photo-block__image--first-mobile" src="img/photo-1-mobile.jpg">
+                <img class="photo-block__image photo-block__image--first-tablet" src="img/photo-1-tablet.jpg">
+                <div class="photo-block__item__bottom-line">
+                  <p class="photo-block__image-name"><b>Неродные просторы</b></p>
+                  <p class="photo-block__author">Автор фото: Борис</p>
+                  <div class="photo-block__like-count photo-block__like-count--1">
+                    <img class="photo-block__like-image" src="img/like-icon.png" alt="лайк">
+                    <p class="photo-block__like-number">1350</p>
+                  </div>
+                </div>
+              </li>
             </div>
-          </li>
-          <li class="photo-block__item photo-block__item--2">
-            <img class="photo-block__image" src="img/photo-2-mobile.jpg">
-            <p class="photo-block__image-name"><b>Местная растительность</b></p>
-            <p class="photo-block__author">Автор фото: Сергей</p>
-            <div class="photo-block__like-count">
-              <img class="photo-block__like-image" src="img/like-icon.png" alt="лайк">
-              <p class="photo-block__like-number">143</p>
+            <div class="photo-flex__item photo-flex__item--second">
+              <li class="photo-block__item photo-block__item--2">
+                <img class="photo-block__image photo-block__image--second-mobile" src="img/photo-2-mobile.jpg">
+                <img class="photo-block__image photo-block__image--second-tablet" src="img/photo-2-tablet.jpg">
+                <div class="photo-block__item__bottom-line">
+                  <p class="photo-block__image-name"><b>Местная растительность</b></p>
+                  <p class="photo-block__author">Автор фото: Сергей</p>
+                  <div class="photo-block__like-count photo-block__like-count--2">
+                    <img class="photo-block__like-image" src="img/like-icon.png" alt="лайк">
+                    <p class="photo-block__like-number">143</p>
+                  </div>
+                </div>
+              </li>
+              <li class="photo-block__item photo-block__item--3">
+                <img class="photo-block__image photo-block__image--third-mobile" src="img/photo-3-mobile.jpg">
+                <img class="photo-block__image photo-block__image--third-tablet" src="img/photo-3-tablet.jpg">
+                <div class="photo-block__item__bottom-line">
+                  <p class="photo-block__image-name"><b>Дорога на север</b></p>
+                  <p class="photo-block__author">Автор фото: Петр</p>
+                  <div class="photo-block__like-count photo-block__like-count--3">
+                    <img class="photo-block__like-image" src="img/like-icon.png" alt="лайк">
+                    <p class="photo-block__like-number">96</p>
+                  </div>
+                </div>
+              </li>
+              <li class="photo-block__item photo-block__item--4">
+                <img class="photo-block__image photo-block__image--fourth-mobile" src="img/photo-4-mobile.jpg">
+                <img class="photo-block__image photo-block__image--fourth-tablet" src="img/photo-4-tablet.jpg">
+                <div class="photo-block__item__bottom-line">
+                  <p class="photo-block__image-name"><b>Мост дьявола</b></p>
+                  <p class="photo-block__author">Автор фото: Антон</p>
+                  <div class="photo-block__like-count photo-block__like-count--4">
+                    <img class="photo-block__like-image" src="img/like-icon.png" alt="лайк">
+                    <p class="photo-block__like-number">254</p>
+                  </div>
+                </div>
+              </li>
             </div>
-          </li>
-          <li class="photo-block__item photo-block__item--3">
-            <img class="photo-block__image" src="img/photo-3-mobile.jpg">
-            <p class="photo-block__image-name"><b>Дорога на север</b></p>
-            <p class="photo-block__author">Автор фото: Петр</p>
-            <div class="photo-block__like-count">
-              <img class="photo-block__like-image" src="img/like-icon.png" alt="лайк">
-              <p class="photo-block__like-number">96</p>
-            </div>
-          </li>
-          <li class="photo-block__item photo-block__item--3">
-            <img class="photo-block__image" src="img/photo-4-mobile.jpg">
-            <p class="photo-block__image-name"><b>Мост дьявола</b></p>
-            <p class="photo-block__author">Автор фото: Антон</p>
-            <div class="photo-block__like-count">
-              <img class="photo-block__like-image" src="img/like-icon.png" alt="лайк">
-              <p class="photo-block__like-number">254</p>
-            </div>
-          </li>
+          </div>
         </ul>
       </section>
       <section class="video-block">

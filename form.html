@@ -44,6 +44,27 @@
           </li>
         </ul>
       </nav>
+
+      <nav class="tablet-nav">
+        <ul class="tablet-nav__list">
+          <li class="tablet-nav__list__item tablet-nav__list__item--first">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="tablet-nav__list__item tablet-nav__list__item--second">
+            <a href="photo.html">фото и видео</a>
+          </li>
+          <li class="tablet-nav__list__item tablet-nav__list__item--image">
+            <img class="page-header__logo-image" src="img/logotype-tablet.png" alt="Логотип Седоны">
+            <img class="page-header__logo-image page-header__logo-image--desktop" src="img/logotype-desktop.png" alt="Логотип Седоны">
+          </li>
+          <li class="tablet-nav__list__item tablet-nav__list__item--third">
+            <a>Форма отзыва</a>
+          </li>
+          <li class="tablet-nav__list__item tablet-nav__list__item--fourth">
+            <a href="#">HTML academy</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="page-main">
@@ -51,6 +72,7 @@
       <section class="page-main__header">
 
         <img class="page-main__header__image" src="img/SEDONA.png" alt="Фото Седоны">
+        <img class="page-main__header__image page-main__header__image--tablet" src="img/SEDONA-tablet.png" alt="Фото Седоны">
         <div class="page-main__header__text-wrapper">
           <h2 class="page-main__header__header">Оставьте свой отзыв</h2>
           <p class="page-main__header__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -62,7 +84,7 @@
 
           <fieldset class="main-form__fieldset main-form__fieldset--introduce">
             <legend class="main-form__legend main-form__legend--introduce">Представьтесь:</legend>
-            <ul class="flex-container flex-column main-form__fieldset-list">
+            <ul class="flex-container flex-column main-form__fieldset-list main-form__fieldset-list--introduce">
               <li class="flex-container main-form__fieldset-list__item">
                 <label class="main-form__label main-form__label--name" for="name">Имя<sup>*</sup>:</label>
                 <input class="main-form__input-field main-form__input-field--name" type="text" name="name" id="name" placeholder="Петр" required>
@@ -80,7 +102,7 @@
 
           <fieldset class="main-form__fieldset main-form__fieldset--contact">
             <legend class="main-form__legend main-form__legend--contacts">Контактная информация:</legend>
-            <ul class="flex-container flex-column main-form__fieldset-list">
+            <ul class="flex-container flex-column main-form__fieldset-list main-form__fieldset-list--contacts">
               <li class="flex-container flex-column">
                 <label class="main-form__label main-form__label--tel" for="tel">Контактный телефон<sup>*</sup>:</label>
                 <input class="main-form__input-field main-form__input-field--tel" type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
@@ -94,7 +116,7 @@
 
           <fieldset class="main-form__fieldset main-form__fieldset--assessment">
             <legend class="main-form__legend main-form__legend--assessment">Ваше общее впечатление:</legend>
-            <ul class="flex-container flex-column main-form__fieldset-list">
+            <ul class="flex-container flex-column main-form__fieldset-list main-form__fieldset-list--assessment">
                 <input class="main-form__radio main-form__radio--positive" type="radio" name="impression" id="positive" value="positive" checked>
               <li class="flex-container main-form__fieldset-item-positive">
                 <label class="main-form__label main-form__label--positive" for="positive">Скорее положительное</label>
@@ -112,7 +134,7 @@
 
           <fieldset class="main-form__fieldset main-form__fieldset--visited-places">
             <legend class="main-form__legend main-form__legend--visited-places">Посещенные достопримечательности:</legend>
-            <ul class="flex-container flex-column main-form__fieldset-list">
+            <ul class="flex-container flex-column main-form__fieldset-list main-form__fieldset-list--visited-places">
 
               <input class="main-form__chexkbox main-form__chexkbox--devils-bridge" type="checkbox" name="devils-bridge" id="devils-bridge" checked>
               <li class="flex-container main-form__fieldset-item--devils-bridge">
@@ -136,13 +158,16 @@
             </ul>
           </fieldset>
 
+          <div class="describe-wrapper">
           <fieldset class="main-form__fieldset main-form__fieldset--describe">
             <legend class="main-form__legend main-form__legend--describe">Опишите свои эмоции:</legend>
 
             <textarea class="main-form__textarea" placeholder="Опишите подробно все свои восторги" name="describe your emotions"></textarea>
           </fieldset>
-          <button type="submit" class="button-sample button-sample--form">Отправить отзыв</button>
+          <button type="submit" class="main-form__button button-sample button-sample--form">Отправить отзыв</button>
+          </div>
         </form>
+        <p class="main-form__required-fields">* — обязательные поля</p>
       </section>
     </main>
 

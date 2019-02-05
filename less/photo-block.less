@@ -13,6 +13,7 @@
   }
   &__like-image{
     margin-right: 10px;
+    font-weight: bold;
   }
   &__like-number{
     margin: 0;
@@ -48,5 +49,131 @@
   }
   &__image{
     margin-bottom: 15px;
+    &--first{
+      &-mobile{
+      display: block;
+      }
+      &-tablet{
+        display: none;
+        margin-top: 20px;
+        margin-bottom: 0;
+      }
+    }
+    &--second{
+      &-mobile{
+        display: block;
+      }
+      &-tablet{
+        display: none;
+      }
+    }
+    &--third{
+      &-mobile{
+        display: block;
+      }
+      &-tablet{
+        display: none;
+      }
+    }
+    &--fourth{
+      &-mobile{
+        display: block;
+      }
+      &-tablet{
+        display: none;
+      }
+    }
+  }
+}
+@media (min-width: 768px){
+  .photo-block{
+    padding-left: 60px;
+    padding-right: 60px;
+    &__item{
+      padding-bottom: 0;
+      &--2,
+      &--3,
+      &--4{
+        padding-top: 0;
+        height: 347px;
+      }
+      &__bottom-line{
+        background-color: #f2f2f2;
+        padding: 16px 0 16px 20px;
+      }
+      &::after{
+        display: none;
+      }
+    }
+    &__image{
+      &--first{
+        &-mobile{
+        display: none;
+        }
+        &-tablet{
+          display: block;
+        }
+      }
+      &--second{
+        &-mobile{
+          display: none;
+        }
+        &-tablet{
+          display: block;
+          margin-bottom: 0;
+        }
+      }
+      &--third{
+        &-mobile{
+          display: none;
+        }
+        &-tablet{
+          display: block;
+          margin-bottom: 0;
+        }
+      }
+      &--fourth{
+        &-mobile{
+          display: none;
+        }
+        &-tablet{
+          display: block;
+          margin-bottom: 0;
+        }
+      }
+    }
+    &__like-count{
+      width: fit-content;
+      float: right;
+      position: relative;
+      top: -38px;
+      left: -19px;
+      &--2{
+        left: -28px;
+      }
+      &--3{
+        left: -35px;
+      }
+      &--4{
+        left: -28px;
+      }
+    }
+    &__like-number{
+      position: relative;
+      top: -4px;
+    }
+  }
+  .photo-flex{
+    display: flex;
+    flex-direction: column;
+    &__item{
+      &--first{
+        margin-bottom: -8px;
+      }
+      &--second{
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
   }
 }
