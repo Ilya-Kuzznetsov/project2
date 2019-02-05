@@ -65,9 +65,6 @@ fieldset {
   margin-right: 19px;
   margin-top: 15px;
 }
-.page-header__logo-image {
-  display: block;
-}
 .page-header__logo-image--desktop {
   display: none;
 }
@@ -378,6 +375,9 @@ fieldset {
   float: left;
   width: 512px;
 }
+.photo-2--desktop {
+  display: none;
+}
 @media (min-width: 768px) {
   .advantages__header {
     font-size: 21px;
@@ -404,11 +404,9 @@ fieldset {
   }
   .advantages__item__wrapper--first {
     float: left;
-    background-color: hsl(203, 47%, 66%);
   }
   .advantages__item__wrapper--second {
     float: right;
-    background-color: hsl(203, 47%, 66%);
   }
   .advantages__item__wrapper--third {
     display: flex;
@@ -487,11 +485,13 @@ fieldset {
   .advantages__item__wrapper--first {
     max-width: 400px;
     min-width: 400px;
+    background-color: hsl(203, 47%, 66%);
   }
   .advantages__item__wrapper--second {
     max-width: 400px;
     min-width: 400px;
     margin-top: 38px;
+    background-color: hsl(203, 47%, 66%);
   }
   .advantages__item__header--first {
     width: 126px;
@@ -938,6 +938,29 @@ fieldset {
     display: none;
   }
 }
+@media (min-width: 1200px) {
+  .photo__header {
+    background-position: 0px -217px;
+    padding-bottom: 22px;
+  }
+  .photo__header__image--tablet {
+    top: 103px;
+    left: 371px;
+  }
+  .photo__header__text-wrapper {
+    margin-top: 224px;
+  }
+  .photo__header__text-wrapper::before {
+    background-position: 0px;
+    top: -57px;
+  }
+  .photo__header__header {
+    padding-left: 493px;
+  }
+  .photo__header__text {
+    margin-left: 359px;
+  }
+}
 .photo-block {
   padding-left: 20px;
 }
@@ -955,6 +978,9 @@ fieldset {
 .photo-block__like-image {
   margin-right: 10px;
   font-weight: bold;
+}
+.photo-block__like-image--desktop {
+  display: none;
 }
 .photo-block__like-number {
   margin: 0;
@@ -998,6 +1024,9 @@ fieldset {
   display: none;
   margin-top: 20px;
   margin-bottom: 0;
+}
+.photo-block__image--first-desktop {
+  display: none;
 }
 .photo-block__image--second-mobile {
   display: block;
@@ -1051,6 +1080,9 @@ fieldset {
     display: block;
     margin-bottom: 0;
   }
+  .photo-block__image--second-desktop {
+    display: none;
+  }
   .photo-block__image--third-mobile {
     display: none;
   }
@@ -1058,12 +1090,18 @@ fieldset {
     display: block;
     margin-bottom: 0;
   }
+  .photo-block__image--third-desktop {
+    display: none;
+  }
   .photo-block__image--fourth-mobile {
     display: none;
   }
   .photo-block__image--fourth-tablet {
     display: block;
     margin-bottom: 0;
+  }
+  .photo-block__image--fourth-desktop {
+    display: none;
   }
   .photo-block__like-count {
     width: fit-content;
@@ -1095,6 +1133,46 @@ fieldset {
   .photo-flex__item--second {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+@media (min-width: 1200px) {
+  .photo-block {
+    padding: 0;
+  }
+  .photo-block__image--first-tablet,
+  .photo-block__image--second-tablet,
+  .photo-block__image--third-tablet,
+  .photo-block__image--fourth-tablet {
+    display: none;
+  }
+  .photo-block__image--first-desktop,
+  .photo-block__image--second-desktop,
+  .photo-block__image--third-desktop,
+  .photo-block__image--fourth-desktop {
+    display: block;
+    margin: 0;
+  }
+  .photo-block__item__bottom-line {
+    background-color: hsla(0, 0%, 0%, 0.3);
+    padding: 16px 0 16px 20px;
+    position: relative;
+    top: -80px;
+    color: white;
+  }
+  .photo-block__item--first {
+    padding-top: 44px;
+  }
+  .photo-block__item--2,
+  .photo-block__item--3,
+  .photo-block__item--4 {
+    flex-basis: 400px;
+    margin-top: -80px;
+  }
+  .photo-block__like-image {
+    display: none;
+  }
+  .photo-block__like-image--desktop {
+    display: block;
   }
 }
 .video-block {
@@ -1137,6 +1215,18 @@ fieldset {
     width: 648px;
     height: 500px;
     margin: 38px 60px 10px 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .video-block {
+    margin-bottom: 82px;
+  }
+  .video-block__header {
+    margin-top: -8px;
+  }
+  .video-block__video {
+    margin: 36px 200px 0 200px;
+    width: 800px;
   }
 }
 .page-main__header {

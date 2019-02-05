@@ -179,6 +179,9 @@
       float: left;
       width: 512px;
     }
+    &--desktop{
+      display: none;
+    }
   }
 }
 @media (min-width: 768px){
@@ -208,11 +211,9 @@
         width: 256px;
         &--first{
           float: left;
-          background-color: hsl(203, 47%, 66%);
         }
         &--second{
           float: right;
-          background-color: hsl(203, 47%, 66%);
         }
         &--third{
           display: flex;
@@ -303,11 +304,13 @@
         &--first{
           max-width: 400px;
           min-width: 400px;
+          background-color: hsl(203, 47%, 66%);
         }
         &--second{
           max-width: 400px;
           min-width: 400px;
           margin-top: 38px;
+          background-color: hsl(203, 47%, 66%);
         }
       }
       &__header{

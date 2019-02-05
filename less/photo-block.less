@@ -14,6 +14,9 @@
   &__like-image{
     margin-right: 10px;
     font-weight: bold;
+    &--desktop{
+      display: none;
+    }
   }
   &__like-number{
     margin: 0;
@@ -57,6 +60,9 @@
         display: none;
         margin-top: 20px;
         margin-bottom: 0;
+      }
+      &-desktop{
+        display: none;
       }
     }
     &--second{
@@ -122,6 +128,9 @@
           display: block;
           margin-bottom: 0;
         }
+        &-desktop{
+          display: none;
+        }
       }
       &--third{
         &-mobile{
@@ -131,6 +140,9 @@
           display: block;
           margin-bottom: 0;
         }
+        &-desktop{
+          display: none;
+        }
       }
       &--fourth{
         &-mobile{
@@ -139,6 +151,9 @@
         &-tablet{
           display: block;
           margin-bottom: 0;
+        }
+        &-desktop{
+          display: none;
         }
       }
     }
@@ -173,6 +188,49 @@
       &--second{
         display: flex;
         flex-wrap: wrap;
+      }
+    }
+  }
+}
+@media (min-width: 1200px){
+  .photo-block{
+    padding: 0;
+    &__image{
+      &--first,
+      &--second,
+      &--third,
+      &--fourth{
+        &-tablet{
+          display: none;
+        }
+        &-desktop{
+          display: block;
+          margin: 0;
+        }
+      }
+    }
+    &__item{
+      &__bottom-line{
+        background-color: hsla(0, 0%, 0%, 0.3);
+        padding: 16px 0 16px 20px;
+        position: relative;
+        top: -80px;
+        color: white;
+      }
+      &--first{
+        padding-top: 44px;
+      }
+      &--2,
+      &--3,
+      &--4{
+        flex-basis: 400px;
+        margin-top: -80px;
+      }
+    }
+    &__like-image{
+      display: none;
+      &--desktop{
+        display: block;
       }
     }
   }
