@@ -167,6 +167,9 @@
     &--tablet{
       display: none;
     }
+    &--desktop{
+      display: none;
+    }
   }
   &-2{
     &--tablet{
@@ -205,9 +208,11 @@
         width: 256px;
         &--first{
           float: left;
+          background-color: hsl(203, 47%, 66%);
         }
         &--second{
           float: right;
+          background-color: hsl(203, 47%, 66%);
         }
         &--third{
           display: flex;
@@ -286,6 +291,83 @@
       display: none;
       &--tablet{
         display: block;
+      }
+    }
+  }
+}
+@media (min-width: 1200px){
+  .advantages{
+    &__item{
+      background-color: hsl(0, 0%, 93%);
+      &__wrapper{
+        &--first{
+          max-width: 400px;
+          min-width: 400px;
+        }
+        &--second{
+          max-width: 400px;
+          min-width: 400px;
+          margin-top: 38px;
+        }
+      }
+      &__header{
+        &--first{
+          width: 126px;
+          padding: 52px 138px 9px 136px;
+        }
+        &--second{
+          padding-top: 54px;
+          margin-top: 0;
+        }
+        &--third,
+        &--fourth,
+        &--fifth{
+          width: 135px;
+          padding: 0;
+          display: block;
+          margin: 46px auto 0 auto;
+      }
+      }
+      &__text{
+        &--first{
+          padding: 0;
+          display: block;
+          width: 286px;
+          margin: 21px 0 58px 57px;
+        }
+        &--second{
+          padding: 15px 90px 56px 90px;
+        }
+      }
+      &--third,
+      &--fourth,
+      &--fifth{
+        margin: 0;
+        flex-basis: 400px;
+        height: 256px;
+      }
+    }
+  }
+  .photo{
+    &-1{
+      display: none;
+      &--tablet{
+        display: none;
+      }
+      &--desktop{
+        display: block;
+        margin: -1px;
+      }
+    }
+    &-2{
+      display: none;
+      &--tablet{
+        display: none;
+      }
+      &--desktop{
+        display: block;
+        margin-top: 37px;
+        margin-left: 0;
       }
     }
   }
