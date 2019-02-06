@@ -99,6 +99,9 @@
       line-height: 26px;
       margin-bottom: 6px;
       padding-left: 22px;
+      &-desktop{
+        display: none;
+      }
     }
     &--email{
       text-transform: uppercase;
@@ -394,5 +397,48 @@
   }
   .form-block{
     margin-bottom: -20px;
+  }
+}
+@media (min-width: 1200px){
+  .main-form{
+    justify-content: space-evenly;
+    &__fieldset{
+      &--assessment{
+        flex-basis: 400px;
+        margin-top: -17px;
+      }
+      &--introduce{
+        flex-basis: 418px;
+      }
+    }
+    &__legend{
+      &--assessment{
+        left: 9px;
+      }
+      &--introduce{
+        left: -109px;
+        top: -17px;
+      }
+    }
+    &__fieldset-list{
+      &--assessment{
+        &::after{
+          left: 453px;
+        }
+      }
+      &--introduce{
+        padding: 0;
+        padding-left: 13px;
+        padding-top: 4px;
+      }
+    }
+    &__label{
+      &--tel{
+        display: none;
+        &-desktop{
+          display: block;
+        }
+      }
+    }
   }
 }
