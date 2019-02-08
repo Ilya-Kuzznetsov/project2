@@ -1672,9 +1672,11 @@ fieldset {
   }
   .main-form__input-field--tel {
     margin-bottom: 10px;
+    width: 100%;
   }
   .main-form__input-field--email {
     margin-bottom: 11px;
+    width: 100%;
   }
   .main-form__textarea {
     position: relative;
@@ -1713,6 +1715,9 @@ fieldset {
   .main-form__fieldset--introduce {
     flex-basis: 418px;
   }
+  .main-form__fieldset--contact {
+    flex-basis: 960px;
+  }
   .main-form__legend--assessment {
     left: 9px;
   }
@@ -1723,16 +1728,31 @@ fieldset {
   .main-form__fieldset-list--assessment::after {
     left: 453px;
   }
+  .main-form__fieldset-list--contacts {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 68px;
+  }
   .main-form__fieldset-list--introduce {
     padding: 0;
     padding-left: 13px;
     padding-top: 4px;
+  }
+  .main-form__fieldset-list__item--tel {
+    flex-direction: row;
+  }
+  .main-form__fieldset-list__item--email {
+    flex-direction: row;
   }
   .main-form__label--tel {
     display: none;
   }
   .main-form__label--tel-desktop {
     display: block;
+    padding: 0;
+  }
+  .main-form__label--email {
+    margin-top: 0;
   }
 }
 .tablet-nav__list {
