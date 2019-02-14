@@ -787,9 +787,9 @@ fieldset {
     margin-left: 371px;
   }
   .button-sample--form {
-    padding-left: 63px;
-    padding-right: 76px;
-    margin-left: 9px;
+    padding-left: 148px;
+    padding-right: 148px;
+    margin-top: 43px;
   }
 }
 .page-footer__hash {
@@ -824,6 +824,7 @@ fieldset {
 @media (min-width: 1200px) {
   .page-footer {
     margin-left: 59px;
+    margin-top: 5px;
   }
   .page-footer__hash {
     margin-right: 184px;
@@ -1718,12 +1719,58 @@ fieldset {
   .main-form__fieldset--contact {
     flex-basis: 960px;
   }
+  .main-form__fieldset--visited-places {
+    margin-top: -56px;
+    flex-basis: 960px;
+  }
+  .main-form__fieldset-item--devils-bridge,
+  .main-form__fieldset-item--mountain,
+  .main-form__fieldset-item--park,
+  .main-form__fieldset-item--red-mountains {
+    flex-basis: 240px;
+    min-width: 240px;
+    max-height: 77px;
+  }
   .main-form__legend--assessment {
     left: 9px;
   }
   .main-form__legend--introduce {
     left: -109px;
     top: -17px;
+  }
+  .main-form__legend--visited-places::before {
+    width: 282px;
+    left: -338px;
+  }
+  .main-form__legend--visited-places::after {
+    width: 282px;
+  }
+  .main-form__legend--contacts::before {
+    left: -341px;
+    width: 282px;
+  }
+  .main-form__legend--contacts::after {
+    width: 282px;
+  }
+  .main-form__legend--describe::before {
+    content: "";
+    display: block;
+    width: 280px;
+    height: 1px;
+    background-color: #dbdbdb;
+    position: relative;
+    top: 11px;
+    left: -339px;
+  }
+  .main-form__legend--describe::after {
+    content: "";
+    display: block;
+    width: 282px;
+    height: 1px;
+    background-color: #dbdbdb;
+    position: relative;
+    top: -16px;
+    left: 341px;
   }
   .main-form__fieldset-list--assessment::after {
     left: 453px;
@@ -1740,9 +1787,14 @@ fieldset {
   }
   .main-form__fieldset-list__item--tel {
     flex-direction: row;
+    flex-basis: 400px;
   }
   .main-form__fieldset-list__item--email {
     flex-direction: row;
+    flex-basis: 480px;
+  }
+  .main-form__fieldset-list--visited-places {
+    padding: 40px 0 0 0;
   }
   .main-form__label--tel {
     display: none;
@@ -1753,6 +1805,18 @@ fieldset {
   }
   .main-form__label--email {
     margin-top: 0;
+    flex-basis: 251px;
+  }
+  .main-form__textarea {
+    left: -10px;
+    max-width: 937px;
+    width: 960px;
+  }
+  .main-form__required-fields {
+    left: 917px;
+  }
+  .describe-wrapper {
+    margin-top: 15px;
   }
 }
 .tablet-nav__list {

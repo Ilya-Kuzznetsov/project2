@@ -236,9 +236,6 @@
         padding: 0;
         margin: 0;
       }
-      &--describe{
-        // order: 5;
-      }
       &-list{
         &--assessment{
           padding-top: 58px;
@@ -302,9 +299,6 @@
       &::after{
         display: none;
       }
-    }
-    &__button{
-      // order: 6;
     }
     &__legend{
       font-size: 21px;
@@ -415,6 +409,20 @@
       &--contact{
         flex-basis: 960px;
       }
+      &--visited-places{
+        margin-top: -56px;
+        flex-basis: 960px;
+      }
+      &-item{
+        &--devils-bridge,
+        &--mountain,
+        &--park,
+        &--red-mountains{
+          flex-basis: 240px;
+          min-width: 240px;
+          max-height: 77px;
+        }
+      }
     }
     &__legend{
       &--assessment{
@@ -423,6 +431,46 @@
       &--introduce{
         left: -109px;
         top: -17px;
+      }
+      &--visited-places{
+        &::before{
+          width: 282px;
+          left: -338px;
+        }
+        &::after{
+          width: 282px;
+        }
+      }
+      &--contacts{
+        &::before{
+          left: -341px;
+          width: 282px;
+        }
+        &::after{
+          width: 282px;
+        }
+      }
+      &--describe{
+        &::before{
+          content: "";
+          display: block;
+          width: 280px;
+          height: 1px;
+          background-color: #dbdbdb;
+          position: relative;
+          top: 11px;
+          left: -339px;
+        }
+        &::after{
+          content: "";
+          display: block;
+          width: 282px;
+          height: 1px;
+          background-color: #dbdbdb;
+          position: relative;
+          top: -16px;
+          left: 341px;
+        }
       }
     }
     &__fieldset-list{
@@ -444,10 +492,15 @@
       &__item{
         &--tel{
           flex-direction: row;
+          flex-basis: 400px;
         }
         &--email{
           flex-direction: row;
+          flex-basis: 480px;
         }
+      }
+      &--visited-places{
+        padding: 40px 0 0 0;
       }
     }
     &__label{
@@ -460,7 +513,19 @@
       }
       &--email{
         margin-top: 0;
+        flex-basis: 251px;
       }
     }
+    &__textarea{
+      left: -10px;
+      max-width: 937px;
+      width: 960px;
+    }
+    &__required-fields{
+      left: 917px;
+    }
+  }
+  .describe-wrapper{
+    margin-top: 15px;
   }
 }
